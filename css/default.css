@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'OpenSansCondensedLight';
+    src: url('fonts/OpenSans-CondLight-webfont.eot');
+    src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-CondLight-webfont.svg#OpenSansCondensedLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansCondensedLightItalic';
+    src: url('fonts/OpenSans-CondLightItalic-webfont.eot');
+    src: url('fonts/OpenSans-CondLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-CondLightItalic-webfont.woff') format('woff'),
+         url('fonts/OpenSans-CondLightItalic-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-CondLightItalic-webfont.svg#OpenSansCondensedLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansCondensedBold';
+    src: url('fonts/OpenSans-CondBold-webfont.eot');
+    src: url('fonts/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-CondBold-webfont.svg#OpenSansCondensedBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, ul, li, textarea, input {
+	list-style: none;
+	margin: 0em;
+	padding: 0em;
+}
+
+html {
+	background: url('../img/background.png');
+	min-width: 750px;
+	cursor: default;
+	overflow-y: scroll;
+}
+
+body {
+	font-family: 'OpenSansCondensedLight', sans-serif;
+	font-size: 100%;
+	margin: 0em 6% 6em 6%;
+}
+
+h1, h2  {
+	font-style: normal;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.ui-widget {
+	font-size: 75%;
+}
+
+nav {
+	overflow: hidden;
+}
+
+nav.project {
+	font-size: 125%;
+	margin-top: 1em;
+}
+
+
+nav.project li {
+	float: left;
+}
+
+nav.project li a {
+	display: block;
+	padding: 0.7em 4em;
+}
+
+nav.backlog {
+	margin: 1em 0;
+}
+
+nav.backlog ul {
+	float: right;
+}
+
+nav.backlog li {
+	border: none;
+	float: left;
+	margin: 0 1em;
+}
+
+nav.board {
+	margin: 1em 0;
+}
+
+nav.board ul {
+	float: right;
+}
+
+nav.board li {
+	border: none;
+	float: left;
+	margin: 0 1em;
+}
+
+section.backlog {
+	overflow: hidden;
+	width: 100%;
+}
+
+section.backlog .tasks {
+	float: left;
+	height: auto !important;
+	width: 30%;
+	min-width:15%;
+	max-width:85%;
+	margin-bottom: -10000px;
+	padding-bottom: 10015px;
+}
+
+section.backlog .items {
+	margin-right: 1em;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+section.backlog .items p.details {
+	white-space: pre-wrap;
+}
+
+.tasks .ui-resizable-handle {
+	background: #eee;
+	right: 12px;
+	width: 6px;
+}
+
+.tasks.ui-resizable-resizing .ui-resizable-handle, .tasks .ui-resizable-handle:hover {
+	background: #bbb;
+}
+
+#task-list {
+	font-size: 110%;
+}
+
+#empty_task_list img {
+	width: 90%;
+}
+
+#task-list li {
+	box-shadow: inset 0 0 3px #888;
+	margin: 12px 30px 12px 12px;
+	padding: 0.3em 1em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#item-list {
+	overflow: visible;
+}
+
+#item-list li {
+	box-shadow: inset 0 0 3px #888;
+	margin: 8px 0px;
+	padding: 0.2em 1em;
+}
+
+#item-list li a {
+	display: block;
+	float: right;
+	padding: 0 0 0 1em;
+}
+
+#item-list li p {
+	display: none;
+	margin: 2em 0;
+	white-space: pre-wrap;
+}
+
+#item-list li .ui-icon {
+	display: none;
+	float: left;
+	margin: 1px;
+}
+
+#backlog-instructions img {
+	float: right;
+	margin-right: 5%;
+	width: 90%;
+}
+
+section.board {
+}
+
+#empty_board img {
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+
+section.board > ul > li {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.columns {
+	overflow: hidden;
+}
+
+.columns > li {
+	float: left;
+	width: 25%;
+}
+
+.board h3 {
+	margin: 1em;
+}
+
+.board h4 {
+	border-bottom: 1px solid #000;
+	margin: 0 1em;
+}
+
+.item-board {
+	padding-bottom: 15px;
+	min-height: 50px;
+}
+
+.item-board li {
+	box-shadow: inset 0 0 3px #888;
+	margin: 8px 1em;
+	overflow: hidden;
+	padding: 0.2em 1em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+form input {
+	width: 100%;
+}
+
+#edit-task, #add-item {
+	display: none;
+}
+
+#details {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.is_done {
+	background: #25CF25 !important;
+}
+
+/* Boxes */
+section.backlog, nav.project, section.board > ul > li, #empty_board {
+	background: url(../img/box.png);
+	box-shadow: 0 0 5px #888;
+}
+
+/* Sortable hover and active effect */
+
+#task-list li:hover, #item-list li:hover, .item-board li:hover, #task-list li.ui-sortable-helper,  #item-list li.ui-sortable-helper, .item-board li.ui-sortable-helper {
+	background: #2599CF;
+}
+
+
+/* Sortable placeholder */
+
+#task-list li.ui-sortable-placeholder, #item-list li.ui-sortable-placeholder, .item-board li.ui-sortable-placeholder {
+	background: #ddd;
+	visibility: visible !important;
+}
